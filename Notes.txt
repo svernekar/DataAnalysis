@@ -26,6 +26,7 @@ df.reset_index(inplace=True)--will reset the index
 pd.read_csv('filepath',index_col='Respondent')------this will read csv and assign "Respondent" as index
 df.sort_index(ascending=False,inplace=True)-----will sort the index in descending order and the chnages are reflected in data frame as we are using inplace=True
 filt33=df["LanguageWorkedWith"].str.contains('Python',na=False)
+df.rename(columns={"old":"new"},inplace=True)
 
 ##EDA-Exploartory Data Analysis:
 1.Is the data categorical
