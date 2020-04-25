@@ -1,0 +1,36 @@
+import pandas as pd
+data=pd.read_csv(filepath)
+data.head()
+data.tail()
+data['Survived'].value_counts()
+data[data['Sex']=='female']
+data[data['Sex'].isnull()]
+data.describe()x
+
+
+pd.read_csv('filepath')
+pd.to-csv('data')
+#df is a data frame
+df.shape
+df.info()
+pd.set_option('display.max_columns',85)
+pd.set_option('display.max_rows',85)
+df.head(10)---first 10 rows
+df.tail(10)--last 10 rows
+df.iloc[[1,2],2]
+df.loc[[1,2],'email']
+df.columns
+df['Hobbyist'].value_counts()-----no of count values ex:Yes=1000 No=900
+df.set_index('xxxx')---will set xxx column as index to the entire dataframe
+df.reset_index(inplace=True)--will reset the index
+pd.read_csv('filepath',index_col='Respondent')------this will read csv and assign "Respondent" as index
+df.sort_index(ascending=False,inplace=True)-----will sort the index in descending order and the chnages are reflected in data frame as we are using inplace=True
+filt33=df["LanguageWorkedWith"].str.contains('Python',na=False)
+
+##EDA-Exploartory Data Analysis:
+1.Is the data categorical
+2.If not ,find Min,Max,Avg
+3.If its then what are categories
+4.Are there missing values
+5.something about distribtion of variable
+
